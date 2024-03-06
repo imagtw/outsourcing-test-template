@@ -1,4 +1,130 @@
-.scssTempText {
-    font-size: 3vw
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Poppins:wght@400;500&display=swap");
+
+:root {
+  --primary-color: #161616;
+  --text-dark: #000000;
+  --text-light: #767268;
+  --extra-light: #f3f4f6;
+  --white: #ffffff;
 }
-    
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  color: var(--white);
+  //   border: 1px solid black;
+}
+
+.App-header {
+  background-image: url("/assets/page1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1rem; /* 基本字體大小 */
+  color: #000000;
+}
+
+.nav,
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  background-color: #fff;
+  color: #000000;
+}
+
+.icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+
+.section_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+.text {
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 30px;
+}
+
+.select {
+  margin: 20px;
+}
+.choose1 {
+  display: flex;
+  color: red;
+}
+
+.text1,
+.text2,
+.text3,
+.text4 {
+  border: 1px solid white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.choose2 {
+  display: flex;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+@media (max-width: 1024px) {
+  /* 平板 */
+  .text {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 360px) {
+  /* 手機 */
+  .nav,
+  .navbar,
+  .icon {
+    // flex-direction: column;
+    display: flex;
+    // margin-top: 2px;
+  }
+
+  .text {
+    font-size: 100px;
+  }
+
+  .select {
+    font-size: 12px;
+    margin-top: 2px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0;
+  }
+}

@@ -1,16 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
-import './App.sass';
-import './App.scss';
+import "./App.scss";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className='content'>
-          <h1 className='welcomeText'>Please start editing content here</h1>
-          <h2 className='sassTempText'>Sass Temp Text</h2>
-          <h2 className='scssTempText'>Scss Temp Text</h2>
+        <div className="content">
+          {/* nav */}
+          <div className="nav">
+            <div className="navbar">
+              <h1 className="title">IMAG切版提庫</h1>
+              <ul className="icon">
+                <li>
+                  <img src="/assets/upload-2-line.png" alt="logo" />
+                </li>
+                <li>
+                  <img src=".assets/close-line.png" alt="logo" />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <section className="section_container">
+            <h1 className="text">Gift Guide</h1>
+            <div className="select">
+              <div className="choose1">
+                <p className="text1">驚喜寶庫</p>
+                <p className="text2">閃亮佳節</p>
+              </div>
+              <div className="choose2">
+                <p className="text3">旅遊之樂</p>
+                <p className="text4">活力旅程</p>
+              </div>
+            </div>
+            <ul className="footer">
+              <li>首頁</li>
+              <li>｜</li>
+              <li>個人化服務</li>
+            </ul>
+          </section>
+
+          <h1></h1>
         </div>
       </header>
     </div>
