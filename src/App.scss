@@ -35,6 +35,7 @@
 .nav,
 .navbar {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   margin: auto;
@@ -80,8 +81,18 @@
   padding: 20px;
   margin: 10px;
   border-radius: 50px;
-  background-color: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, border 0.3s ease;
+  transform: scale(1);
+}
+
+.text1:hover,
+.text2:hover,
+.text3:hover,
+.text4:hover {
+  border: 1px solid black;
+  transform: scale(1.1);
 }
 
 .choose2 {

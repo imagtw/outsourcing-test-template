@@ -1,4 +1,6 @@
 import "./App.scss";
+import uploadImage from "./assets/upload-2-line.png";
+import closeImage from "./assets/close-line.png";
 
 function App() {
   return (
@@ -11,10 +13,10 @@ function App() {
               <h1 className="title">IMAG切版提庫</h1>
               <ul className="icon">
                 <li>
-                  <img src="assets/upload-2-line.png" alt="logo" />
+                  <img src={uploadImage} alt="logo" />
                 </li>
                 <li>
-                  <img src="/assets/close-line.png" alt="logo" />
+                  <img src={closeImage} alt="logo" />
                 </li>
               </ul>
             </div>
